@@ -65,7 +65,7 @@ export const IntroductionSlide = () => (
       </div>
       <p className="text-2xl text-gray-300 leading-relaxed mb-10 max-w-5xl mx-auto">
         HackTheAI was an exciting national-level hackathon organized to explore the 
-        potential of <span className="font-bold text-cyan-400">Generative AI</span> among university students.
+        potential of <span className="font-bold text-cyan-400">Agentic AI</span> among university students.
       </p>
       <div className="max-w-5xl mx-auto space-y-6">
         <div className="bg-white/5 backdrop-blur-sm p-7 rounded-lg border border-white/10">
@@ -93,7 +93,7 @@ export const AboutSlide = () => (
       <h2 className="text-7xl font-bold text-white mb-10">🚀 About the Hackathon</h2>
       <p className="text-2xl text-gray-300 leading-relaxed mb-10">
         A global initiative to empower students to learn, build, and experiment 
-        with Generative AI technologies
+        with Agentic AI technologies
       </p>
       <div className="grid grid-cols-2 gap-8 max-w-6xl mx-auto">
         <div className="bg-white/5 backdrop-blur-sm p-8 rounded-lg text-left border border-white/10">
@@ -107,7 +107,7 @@ export const AboutSlide = () => (
         <div className="bg-white/5 backdrop-blur-sm p-8 rounded-lg text-left border border-white/10">
           <h3 className="text-3xl font-bold text-white mb-4">🎯 Event Details</h3>
           <ul className="text-gray-300 space-y-3 text-2xl">
-            <li><b className="text-white">Theme:</b> Generative AI for Impact</li>
+            <li><b className="text-white">Theme:</b> Agentic AI for Impact</li>
             <li><b className="text-white">Type:</b> Hybrid Event</li>
             <li><b className="text-white">Duration:</b> Multi-day event</li>
           </ul>
@@ -246,19 +246,82 @@ export const PlanningSlide = () => (
   </Slide>
 );
 
+// Never-Ending Meetings Slide
+export const MeetingsSlide = () => (
+  <Slide bgColor="bg-[#0a0a0a]">
+    <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-yellow-900/20"></div>
+    <div className="relative z-10 w-full h-full px-12 py-8">
+      {/* Top Row - 3 Images */}
+      <div className="flex justify-center gap-6 mb-8">
+        <img 
+          src="/Meeting 1.jpeg"
+          alt="Meeting Session" 
+          className="rounded-lg border-2 border-white/20 shadow-2xl max-h-[250px] w-auto object-contain"
+        />
+        <img 
+          src="/Meeting 2.jpeg"
+          alt="Meeting Session" 
+          className="rounded-lg border-2 border-white/20 shadow-2xl max-h-[250px] w-auto object-contain"
+        />
+        <img 
+          src="/Meeting 3.jpeg"
+          alt="Meeting Session" 
+          className="rounded-lg border-2 border-white/20 shadow-2xl max-h-[250px] w-auto object-contain"
+        />
+      </div>
+      
+      {/* Center Content */}
+      <div className="text-center mb-8">
+        <h2 className="text-7xl font-bold text-white mb-6">🌙 Never-Ending Meetings</h2>
+        <p className="text-3xl text-gray-300 mb-8 italic leading-relaxed">
+          "Day or night, we met... and met... and met some more."
+        </p>
+        
+        <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl max-w-4xl mx-auto">
+          <h3 className="text-3xl font-bold text-white mb-6">⏰ Meeting Marathon</h3>
+          <div className="grid grid-cols-2 gap-6 text-xl">
+            <div className="text-gray-200">
+              <p className="mb-3">📱 <b className="text-white">Countless online discussions</b></p>
+              <p className="mb-3">☕ <b className="text-white">Late-night planning sessions</b></p>
+            </div>
+            <div className="text-gray-200">
+              <p className="mb-3">🤝 <b className="text-white">In-person coordination</b></p>
+              <p className="mb-3">📊 <b className="text-white">Weekly progress reviews</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Bottom Row - 2 Images */}
+      <div className="flex justify-center gap-6">
+        <img 
+          src="/Meeting 4.webp"
+          alt="Meeting Session" 
+          className="rounded-lg border-2 border-white/20 shadow-2xl max-h-[250px] w-auto object-contain"
+        />
+        <img 
+          src="/Meeting 5.webp"
+          alt="Meeting Session" 
+          className="rounded-lg border-2 border-white/20 shadow-2xl max-h-[250px] w-auto object-contain"
+        />
+      </div>
+    </div>
+  </Slide>
+);
+
 // Training Sessions Slide with Images
 export const TrainingSlide = () => (
   <Slide bgColor="bg-[#0a0a0a]">
     <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-violet-900/10 to-purple-900/20"></div>
-    <div className="relative z-10">
+    <div className="relative z-4 px-2">
       <h2 className="text-7xl font-bold text-white mb-10">📚 Training & Workshop Sessions</h2>
       <p className="text-2xl text-gray-300 mb-12">Comprehensive training to prepare participants</p>
-      <div className="grid grid-cols-4 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-4 gap-6 w-full">
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
             src="/Workshop-on-Hackathon-101.webp"
             alt="Hackathon 101 Workshop" 
-            className="w-full h-64 object-cover"
+            className="w-full h-72 object-cover"
           />
           <div className="p-6">
             <h3 className="text-2xl font-bold text-white mb-2">Hackathon 101</h3>
@@ -269,7 +332,7 @@ export const TrainingSlide = () => (
           <img 
             src="/Training-Session-Day-1.webp"
             alt="SmythOS Training Day 1" 
-            className="w-full h-64 object-cover"
+            className="w-full h-72 object-cover"
           />
           <div className="p-6">
             <h3 className="text-2xl font-bold text-white mb-2">SmythOS Training</h3>
@@ -280,7 +343,7 @@ export const TrainingSlide = () => (
           <img 
             src="/Training-Session-with-GUCC-Day-2.webp"
             alt="GUCC Training Day 2" 
-            className="w-full h-64 object-cover"
+            className="w-full h-72 object-cover"
           />
           <div className="p-6">
             <h3 className="text-2xl font-bold text-white mb-2">GUCC Training</h3>
@@ -291,7 +354,7 @@ export const TrainingSlide = () => (
           <img 
             src="/Training-with-SmythOS-day-3.png"
             alt="SmythOS Training Day 3" 
-            className="w-full h-64 object-cover"
+            className="w-full h-72 object-cover"
           />
           <div className="p-6">
             <h3 className="text-2xl font-bold text-white mb-2">SmythOS Day 3</h3>
