@@ -7,7 +7,7 @@ export const TitleSlide = () => (
     <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-indigo-900/30"></div>
     <div className="relative z-10">
       <img 
-        src="/HackTheAI-Logo-v1-(Black-bg).png" 
+        src="/HackTheAI-Logo-v1-Black-bg.png" 
         alt="Hack The AI Logo" 
         className="w-[500px] mx-auto mb-10"
       />
