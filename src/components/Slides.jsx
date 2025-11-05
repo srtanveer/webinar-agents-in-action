@@ -29,9 +29,9 @@ export const TitleSlide = () => (
         </p>
       </div>
       <div className="mt-14 flex justify-center items-center gap-12">
-        <img src="/SmythOS-for Dark BG.png" alt="SmythOS" className="h-10 opacity-100" />
-        <img src="/LOGO DEPT OF Computer Science and Engineering.png" alt="Dept of CSE" className="h-16 opacity-100" />
-        <img src="/LOGO of GUCC.png" alt="GUCC" className="h-16 opacity-100" />
+        <img src="/SmythOS-for%20Dark%20BG.png" alt="SmythOS" className="h-10 opacity-100" />
+        <img src="/LOGO%20DEPT%20OF%20Computer%20Science%20and%20Engineering.png" alt="Dept of CSE" className="h-16 opacity-100" />
+        <img src="/LOGO%20of%20GUCC.png" alt="GUCC" className="h-16 opacity-100" />
         <img src="/VGS.png" alt="VGS" className="h-16 opacity-100" />
         <img src="/GUB.png" alt="Green University" className="h-16 opacity-100" />
       </div>
@@ -256,7 +256,7 @@ export const TrainingSlide = () => (
       <div className="grid grid-cols-4 gap-8 max-w-7xl mx-auto">
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Workshop on Hackathon 101.webp" 
+            src="/Workshop%20on%20Hackathon%20101.webp" 
             alt="Hackathon 101 Workshop" 
             className="w-full h-64 object-cover"
           />
@@ -267,7 +267,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Training Session Day 1.webp" 
+            src="/Training%20Session%20Day%201.webp" 
             alt="SmythOS Training Day 1" 
             className="w-full h-64 object-cover"
           />
@@ -278,7 +278,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Training Session with GUCC Day 2.webp" 
+            src="/Training%20Session%20with%20GUCC%20Day%202.webp" 
             alt="GUCC Training Day 2" 
             className="w-full h-64 object-cover"
           />
@@ -289,7 +289,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Training with SmythOS day 3.png" 
+            src="/Training%20with%20SmythOS%20day%203.png" 
             alt="SmythOS Training Day 3" 
             className="w-full h-64 object-cover"
           />
@@ -449,17 +449,17 @@ export const OrganizersSlide = () => (
           <p className="text-gray-300 text-center text-xl">HOST INSTITUTION</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/LOGO of GUCC.png" alt="GUCC" className="h-28 mb-5" />
+          <img src="/LOGO%20of%20GUCC.png" alt="GUCC" className="h-28 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">GUCC</h3>
           <p className="text-gray-300 text-center text-xl">ORGANIZER</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/LOGO DEPT OF Computer Science and Engineering.png" alt="CSE Dept" className="h-28 mb-5" />
+          <img src="/LOGO%20DEPT%20OF%20Computer%20Science%20and%20Engineering.png" alt="CSE Dept" className="h-28 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">Dept. of CSE</h3>
           <p className="text-gray-300 text-center text-xl">ORGANIZER</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/SmythOS-for Dark BG.png" alt="SmythOS" className="h-20 mb-5" />
+          <img src="/SmythOS-for%20Dark%20BG.png" alt="SmythOS" className="h-20 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">SmythOS</h3>
           <p className="text-gray-300 text-center text-xl">Sponsor</p>
         </div>
@@ -479,7 +479,7 @@ export const UniversityVisitSlide = () => (
         {[2, 3, 6, 8, 10, 11, 15, 19].map((num) => (
           <div key={num} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10 hover:scale-105 transition-transform">
             <img 
-              src={`/Public/University Visit/${num}.webp`}
+              src={`/Public/University%20Visit/${num}.webp`}
               alt={`University Visit ${num}`}
               className="w-full h-40 object-cover"
             />
@@ -496,16 +496,16 @@ export const EventMomentsSlide = () => {
   
   const eventMoments = [
     { file: "Breakfast.webp", title: "Breakfast" },
-    { file: "hackathon Venue.webp", title: "Hackathon Venue" },
-    { file: "Hackathon Moment.webp", title: "Hackathon Moment" },
-    { file: "Judges Panel.jpg", title: "Judges Panel" },
-    { file: "judging Moment.webp", title: "Judging Moment" },
-    { file: "Final Presentation.webp", title: "Final Presentation" },
+    { file: "hackathon%20Venue.webp", title: "Hackathon Venue" },
+    { file: "Hackathon%20Moment.webp", title: "Hackathon Moment" },
+    { file: "Judges%20Panel.jpg", title: "Judges Panel" },
+    { file: "judging%20Moment.webp", title: "Judging Moment" },
+    { file: "Final%20Presentation.webp", title: "Final Presentation" },
     { file: "Champion.jpg", title: "Champion" },
-    { file: "1st Runner Up.jpg", title: "1st Runner Up" },
-    { file: "2nd Runner Up.jpg", title: "2nd Runner Up" },
-    { file: "Judges receive Appreciation.webp", title: "Judges Receive Appreciation" },
-    { file: "HackTheAI Event All Together Group Photo.webp", title: "HackTheAI Event All Together Group Photo" }
+    { file: "1st%20Runner%20Up.jpg", title: "1st Runner Up" },
+    { file: "2nd%20Runner%20Up.jpg", title: "2nd Runner Up" },
+    { file: "Judges%20receive%20Appreciation.webp", title: "Judges Receive Appreciation" },
+    { file: "HackTheAI%20Event%20All%20Together%20Group%20Photo.webp", title: "HackTheAI Event All Together Group Photo" }
   ];
 
   const nextImage = () => {
@@ -526,7 +526,7 @@ export const EventMomentsSlide = () => {
         <div className="max-w-5xl mx-auto">
           <div className="relative bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
             <img 
-              src={`/Public/Event Moments/${eventMoments[currentImageIndex].file}`}
+              src={`/Public/Event%20Moments/${eventMoments[currentImageIndex].file}`}
               alt={eventMoments[currentImageIndex].title}
               className="w-full h-[500px] object-cover"
             />
