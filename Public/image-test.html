@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .test-image {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        .test-image img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .success { background: #10b981; }
+        .error { background: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1>Image Loading Test Page</h1>
+    <p>This page tests if images are being served correctly on Vercel</p>
+    
+    <div class="test-image">
+        <h3>Test 1: Logo</h3>
+        <img src="/HackTheAI-Logo-v1-Black-bg.png" alt="Logo" onload="showStatus(this, true)" onerror="showStatus(this, false)">
+        <div class="status-container"></div>
+    </div>
+
+    <div class="test-image">
+        <h3>Test 2: SmythOS Logo</h3>
+        <img src="/SmythOS-for-Dark-BG.png" alt="SmythOS" onload="showStatus(this, true)" onerror="showStatus(this, false)">
+        <div class="status-container"></div>
+    </div>
+
+    <div class="test-image">
+        <h3>Test 3: Workshop Image</h3>
+        <img src="/Workshop-on-Hackathon-101.webp" alt="Workshop" onload="showStatus(this, true)" onerror="showStatus(this, false)">
+        <div class="status-container"></div>
+    </div>
+
+    <div class="test-image">
+        <h3>Test 4: GUCC Logo</h3>
+        <img src="/LOGO-of-GUCC.png" alt="GUCC" onload="showStatus(this, true)" onerror="showStatus(this, false)">
+        <div class="status-container"></div>
+    </div>
+
+    <script>
+        function showStatus(img, success) {
+            const container = img.parentElement.querySelector('.status-container');
+            const status = document.createElement('div');
+            status.className = `status ${success ? 'success' : 'error'}`;
+            status.textContent = success ? '✓ Image loaded successfully' : '✗ Failed to load image';
+            container.appendChild(status);
+            
+            if (!success) {
+                const path = document.createElement('div');
+                path.style.cssText = 'margin-top: 10px; color: #666; font-size: 12px;';
+                path.textContent = `Attempted path: ${img.src}`;
+                container.appendChild(path);
+            }
+        }
+    </script>
+</body>
+</html>
