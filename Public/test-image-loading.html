@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #0a0a0a;
+            color: white;
+        }
+        .test-image {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        .test-image img {
+            max-width: 200px;
+            max-height: 200px;
+            display: block;
+            margin: 10px 0;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .success { background: #0f5132; }
+        .error { background: #842029; }
+        h1 { color: #fff; }
+        h2 { color: #888; margin-top: 0; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Image Loading Test</h1>
+    <p>This page tests if all images are loading correctly on your deployment.</p>
+    
+    <div class="test-image">
+        <h2>Logo (PNG)</h2>
+        <img src="/HackTheAI-Logo-v1-Black-bg.png" alt="Logo" onload="markSuccess(this)" onerror="markError(this)" id="img1">
+        <span class="status" id="status1">Loading...</span>
+    </div>
+
+    <div class="test-image">
+        <h2>Training Image (WebP)</h2>
+        <img src="/Workshop-on-Hackathon-101.webp" alt="Workshop" onload="markSuccess(this)" onerror="markError(this)" id="img2">
+        <span class="status" id="status2">Loading...</span>
+    </div>
+
+    <div class="test-image">
+        <h2>Event Image (JPG)</h2>
+        <img src="/Champion.jpg" alt="Champion" onload="markSuccess(this)" onerror="markError(this)" id="img3">
+        <span class="status" id="status3">Loading...</span>
+    </div>
+
+    <div class="test-image">
+        <h2>University Visit (WebP)</h2>
+        <img src="/2.webp" alt="Visit" onload="markSuccess(this)" onerror="markError(this)" id="img4">
+        <span class="status" id="status4">Loading...</span>
+    </div>
+
+    <script>
+        function markSuccess(img) {
+            const id = img.id;
+            const statusEl = document.getElementById('status' + id.slice(-1));
+            statusEl.textContent = '✓ Loaded Successfully';
+            statusEl.className = 'status success';
+        }
+
+        function markError(img) {
+            const id = img.id;
+            const statusEl = document.getElementById('status' + id.slice(-1));
+            statusEl.textContent = '✗ Failed to Load';
+            statusEl.className = 'status error';
+            console.error('Failed to load:', img.src);
+        }
+
+        // Log all attempted image URLs
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('Testing image URLs:');
+            document.querySelectorAll('img').forEach(img => {
+                console.log('- ' + img.src);
+            });
+        });
+    </script>
+</body>
+</html>
