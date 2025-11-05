@@ -479,7 +479,7 @@ export const UniversityVisitSlide = () => (
         {[2, 3, 6, 8, 10, 11, 15, 19].map((num) => (
           <div key={num} className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10 hover:scale-105 transition-transform">
             <img 
-              src={`/Public/university-visit/${num}.webp`}
+              src={`/${num}.webp`}
               alt={`University Visit ${num}`}
               className="w-full h-40 object-cover"
             />
@@ -526,7 +526,7 @@ export const EventMomentsSlide = () => {
         <div className="max-w-5xl mx-auto">
           <div className="relative bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
             <img 
-              src={`/Public/event-moments/${eventMoments[currentImageIndex].file}`}
+              src={`/${eventMoments[currentImageIndex].file}`}
               alt={eventMoments[currentImageIndex].title}
               className="w-full h-[500px] object-cover"
             />
