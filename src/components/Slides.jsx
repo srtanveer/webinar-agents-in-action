@@ -594,7 +594,7 @@ export const FinalSlide = () => (
       <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg max-w-5xl mx-auto mb-12 border border-white/10">
         <p className="text-2xl text-white leading-relaxed">
           More than an event — a <b>journey of learning, teamwork, and innovation</b>.
-          Student-led clubs like GUCC can successfully manage national-scale events 
+          Student-led clubs like Green University Computer Club can successfully manage national-scale events
           and represent their institution proudly on a global platform.
         </p>
       </div>
@@ -604,5 +604,6 @@ export const FinalSlide = () => (
         {/* <p><b className="text-white">📅 Date:</b> November 2025</p> */}
       </div>
     </div>
+
   </Slide>
 );
