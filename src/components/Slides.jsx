@@ -7,7 +7,7 @@ export const TitleSlide = () => (
     <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-indigo-900/30"></div>
     <div className="relative z-10">
       <img 
-        src="/Public/HackTheAI-Logo-v1-(Black-bg).png" 
+        src="/HackTheAI-Logo-v1-(Black-bg).png" 
         alt="Hack The AI Logo" 
         className="w-[500px] mx-auto mb-10"
       />
@@ -29,11 +29,11 @@ export const TitleSlide = () => (
         </p>
       </div>
       <div className="mt-14 flex justify-center items-center gap-12">
-        <img src="/Public/SmythOS-for Dark BG.png" alt="SmythOS" className="h-10 opacity-100" />
-        <img src="/Public/LOGO DEPT OF Computer Science and Engineering.png" alt="Dept of CSE" className="h-16 opacity-100" />
-        <img src="/Public/LOGO of GUCC.png" alt="GUCC" className="h-16 opacity-100" />
-        <img src="/Public/VGS.png" alt="VGS" className="h-16 opacity-100" />
-        <img src="/Public/GUB.png" alt="Green University" className="h-16 opacity-100" />
+        <img src="/SmythOS-for Dark BG.png" alt="SmythOS" className="h-10 opacity-100" />
+        <img src="/LOGO DEPT OF Computer Science and Engineering.png" alt="Dept of CSE" className="h-16 opacity-100" />
+        <img src="/LOGO of GUCC.png" alt="GUCC" className="h-16 opacity-100" />
+        <img src="/VGS.png" alt="VGS" className="h-16 opacity-100" />
+        <img src="/GUB.png" alt="Green University" className="h-16 opacity-100" />
       </div>
     </div>
   </Slide>
@@ -256,7 +256,7 @@ export const TrainingSlide = () => (
       <div className="grid grid-cols-4 gap-8 max-w-7xl mx-auto">
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Public/Workshop on Hackathon 101.webp" 
+            src="/Workshop on Hackathon 101.webp" 
             alt="Hackathon 101 Workshop" 
             className="w-full h-64 object-cover"
           />
@@ -267,7 +267,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Public/Training Session Day 1.webp" 
+            src="/Training Session Day 1.webp" 
             alt="SmythOS Training Day 1" 
             className="w-full h-64 object-cover"
           />
@@ -278,7 +278,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Public/Training Session with GUCC Day 2.webp" 
+            src="/Training Session with GUCC Day 2.webp" 
             alt="GUCC Training Day 2" 
             className="w-full h-64 object-cover"
           />
@@ -289,7 +289,7 @@ export const TrainingSlide = () => (
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/10">
           <img 
-            src="/Public/Training with SmythOS day 3.png" 
+            src="/Training with SmythOS day 3.png" 
             alt="SmythOS Training Day 3" 
             className="w-full h-64 object-cover"
           />
@@ -444,22 +444,22 @@ export const OrganizersSlide = () => (
       <h2 className="text-7xl font-bold text-white mb-12">🏢 Organizers & Partners</h2>
       <div className="grid grid-cols-2 gap-10 max-w-6xl mx-auto">
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/Public/GUB.png" alt="Green University" className="h-28 mb-5" />
+          <img src="/GUB.png" alt="Green University" className="h-28 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">Green University of Bangladesh</h3>
           <p className="text-gray-300 text-center text-xl">HOST INSTITUTION</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/Public/LOGO of GUCC.png" alt="GUCC" className="h-28 mb-5" />
+          <img src="/LOGO of GUCC.png" alt="GUCC" className="h-28 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">GUCC</h3>
           <p className="text-gray-300 text-center text-xl">ORGANIZER</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/Public/LOGO DEPT OF Computer Science and Engineering.png" alt="CSE Dept" className="h-28 mb-5" />
+          <img src="/LOGO DEPT OF Computer Science and Engineering.png" alt="CSE Dept" className="h-28 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">Dept. of CSE</h3>
           <p className="text-gray-300 text-center text-xl">ORGANIZER</p>
         </div>
         <div className="bg-white/5 backdrop-blur-sm p-10 rounded-lg border border-white/10 flex flex-col items-center">
-          <img src="/Public/SmythOS-for Dark BG.png" alt="SmythOS" className="h-20 mb-5" />
+          <img src="/SmythOS-for Dark BG.png" alt="SmythOS" className="h-20 mb-5" />
           <h3 className="text-3xl font-bold text-white mb-3">SmythOS</h3>
           <p className="text-gray-300 text-center text-xl">Sponsor</p>
         </div>
